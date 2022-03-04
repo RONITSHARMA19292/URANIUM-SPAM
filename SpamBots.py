@@ -384,7 +384,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("𝘽𝙔𝙀 𝘽𝙔𝙀 𝘽𝘼𝘽𝙔 𝙄 𝙈𝙄𝙎𝙎 𝙔𝙊𝙐 🌹")
+                await event.edit('𝐁𝐘𝐄 𝐁𝐘𝐄 𝐁𝐀𝐁𝐘 𝐌𝐀 𝐂𝐇𝐔𝐃𝐀𝐎)
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -475,7 +475,7 @@ async def spam(e):
         if len(Ustadsexy) == 2:
             message = str(Ustadsexy[1])
             counter = int(Ustadsexy[0])
-            sleeptime = float(Ustad[0])
+            sleeptime = float(Ustad[0.5])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -485,7 +485,8 @@ async def spam(e):
                     await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.media:
             counter = int(Ustadsexy[0])
-            sleeptime = float(Ustad[0])
+            sleeptime = float(Ustad[0.5])
+                                 
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -724,7 +725,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"🔥 𝙍𝘼𝙁𝙏𝘼𝙍 🔥.!\n`{ms}` ms\n ⚔️ 𝙐𝙍𝘼𝙉𝙄𝙐𝙈 ✘ 𝙎𝙋𝘼𝙈𝘽𝙊𝙏 ⚔️")
+        await event.edit(f"🔥 𝙍𝘼𝙁𝙏𝘼𝙍 𝐃𝐄𝐊𝐇 🔥.!\n`{ms}` ms\n ⚔️ 𝐉𝐔𝐍𝐆𝐋𝐈 𝐒𝐏𝐀𝐌𝐁𝐎𝐓⚔️")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -739,7 +740,7 @@ async def ping(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\n💀 𝙍𝙀𝙎𝙏𝘼𝙍𝙏 𝙐𝙍𝘼𝙉𝙄𝙐𝙈 𝘽𝙊𝙏𝙎 ☠️"
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\n💀 𝙍𝙀𝙎𝙏𝘼𝙍𝙏 𝐉𝐔𝐍𝐆𝐋𝐈 𝘽𝙊𝙏𝙎 ☠️"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await idk.disconnect()
